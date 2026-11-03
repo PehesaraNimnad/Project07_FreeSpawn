@@ -3,7 +3,9 @@
 Free spawn selector for Qbox. A clean text list on the left, an aerial camera flies over each place. No admin panel, places are in `config.lua`.
 
 ## Features
-- "Last location" first (when the character has one), then your own places.
+- "Last location" first (when the character has one), then the character's owned properties, then your own places.
+- New characters on **qbx_properties** pick a starting apartment (it puts them inside and opens the clothing menu); other new characters get the clothing menu after spawning.
+- Housing through Project7H_Lib: qbx_properties, ps-housing, qb-houses (`Config.housing`, `Config.properties`).
 - ↑ ↓ to pick, Enter to spawn.
 - The client only sends the place name; the server answers with the coordinates.
 - Discord log of every spawn.
@@ -11,7 +13,7 @@ Free spawn selector for Qbox. A clean text list on the left, an aerial camera fl
 ## Requirements
 - [qbx_core](https://github.com/Qbox-project/qbx_core)
 - [ox_lib](https://github.com/overextended/ox_lib)
-- Project7H_Lib
+- [Project7H_Lib](https://github.com/PehesaraNimnad/Project7H_Lib/releases/latest) (framework / appearance / weather / spawn layer)
 
 ## Installation
 1. Put `Project07_FreeSpawn` in your `resources` folder.
@@ -31,3 +33,7 @@ npm install
 npx vite build --mode spawn
 ```
 Copy `build/spawn` to `web/build`.
+
+## Preview
+
+![Browser preview](preview.png)

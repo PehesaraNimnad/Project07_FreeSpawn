@@ -2,6 +2,10 @@ Config = {}
 
 Config.lastLocation = true    -- first entry: where the character logged out
 
+-- housing (qbx_properties, ps-housing, qb-houses through Project7H_Lib)
+Config.housing = true         -- new characters pick a starting apartment (qbx_properties)
+Config.properties = true      -- owned properties are listed as spawn points
+
 -- label, small line under it, where you appear
 Config.locations = {
     { id = 'legion', label = 'Legion Square', sub = 'City centre', coords = vec4(195.17, -933.77, 30.69, 144.5) },
